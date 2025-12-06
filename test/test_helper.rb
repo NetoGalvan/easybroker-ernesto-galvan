@@ -1,5 +1,5 @@
 require 'minitest/autorun'
 require 'webmock/minitest'
+require_relative '../lib/services/properties_service'
 
-
-$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+WebMock.disable_net_connect!(allow_localhost: true)
